@@ -11,7 +11,7 @@ randomPattern.push(randomChosenColour);
 $("#"+randomChosenColour).css("opacity","0.5");
     setTimeout(function () {
         $("#"+randomChosenColour).css("opacity","1");
-    },100);
+    },200);
 var audio=new Audio("./sounds/"+randomChosenColour+".mp3");
 audio.play();
 }
@@ -23,7 +23,7 @@ audio.play();
 anscheck();
 setTimeout(function () {
   if(patternClicked.length===randomPattern.length){lvl=lvl+1;  patternClicked=[];gameRun();}
-},400);
+},800);
 if(cont===false){game_over();}});
 if(!cont){$(document).keypress(function(){
   cont=true;
@@ -55,7 +55,7 @@ function gameRun(){
 function game_over() {gameOver=true;
     randomPattern=[];
     patternClicked=[];
-    if(gameOver){$("h1").HTML("Press any key or click <button class="st "> here </button>to restart");
+    if(gameOver){$("h1").html("Press any key or click <button class="st "> here </button>to restart");
     $("h1").addClass("game-over");
     setTimeout(function(){$("h1").removeClass("game-over");},3000);
     lvl=0;
