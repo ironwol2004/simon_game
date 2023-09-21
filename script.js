@@ -55,7 +55,7 @@ function gameRun(){
 function game_over() {gameOver=true;
     randomPattern=[];
     patternClicked=[];
-    if(gameOver){$("h1").text("Press any key or click here to restart");
+    if(gameOver){$("h1").HTML("Press any key or click <button> here </button>to restart");
     $("h1").addClass("game-over");
     setTimeout(function(){$("h1").removeClass("game-over");},3000);
     lvl=0;
