@@ -31,7 +31,7 @@ if(!cont){$(document).keypress(function(){
     gameRun();
 
 });
-$("h1" ).click(function(){
+$(".st").click(function(){
   cont=true;
 
     gameRun();
