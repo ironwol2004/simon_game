@@ -24,7 +24,8 @@ anscheck();
 setTimeout(function () {
   if(patternClicked.length===randomPattern.length){lvl=lvl+1;  patternClicked=[];gameRun();}
 },800);
-if(cont===false){game_over();}});
+if(cont===false){var d=new Audio("./sounds/wrong.mp3" );d.play();
+game_over();}});
 if(!cont){$(document).keypress(function(){
   cont=true;
 
