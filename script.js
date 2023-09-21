@@ -30,6 +30,12 @@ if(!cont){$(document).keypress(function(){
 
     gameRun();
 
+});
+$("h1" ).click(function(){
+  cont=true;
+
+    gameRun();
+
 });}
 function anscheck(){
   cont=true;
